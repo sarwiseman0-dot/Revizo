@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087d42">
+  <meta name="description" content="REVIZO - Révise mieux, progresse chaque jour.">
+  <title>REVIZO - Réussis tes examens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="app">
+    <section id="welcome" class="screen">
+      <div class="logo">📖</div>
+      <h1>REVI<span>Z</span>O</h1>
+      <p>Révise mieux. Progresse chaque jour.</p>
+      <p>Réussis tes examens.</p>
+      <button id="startBtn">Commencer</button>
+      <button id="languageBtn">English</button>
+    </section>
+
+    <section id="classScreen" class="screen hidden">
+      <h2>Bienvenue sur REVIZO !</h2>
+      <p>Choisis ton niveau scolaire.</p>
+
+      <button class="level" data-level="Collège">Collège</button>
+      <button class="level" data-level="Lycée">Lycée</button>
+
+      <div id="classChoices"></div>
+      <button id="confirmClass" disabled>Continuer</button>
+    </section>
+
+    <section id="dashboard" class="screen hidden">
+      <h2>Bonjour et bienvenue !</h2>
+      <p id="studentClass"></p>
+
+      <div class="progress">
+        <h3>Ma progression</h3>
+        <p>Commence tes révisions dès aujourd'hui !</p>
+      </div>
+
+      <div class="menu">
+        <button>Cours 📚</button>
+        <button>Exercices ✏️</button>
+        <button>Examens 📝</button>
+        <button>Quiz 🏆</button>
+        <button>Progression 📈</button>
+        <button>Paramètres ⚙️</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
